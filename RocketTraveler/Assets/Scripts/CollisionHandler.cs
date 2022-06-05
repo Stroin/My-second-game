@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
@@ -10,14 +11,32 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
 
     bool isTransitioning = false;
+    bool collisionDisabled = false;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
-     void OnCollisionEnter(Collision other) 
+    void Update() 
     {
-        if(isTransitioning) { return; }
+        RespondToDebugKeys();
+    }
+
+    void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.F10))
+        {
+            LoadNextLevel(); // załaduj następny poziom
+        }
+        else if(Input.GetKeyDown(KeyCode.F11))
+        {
+            collisionDisabled = !collisionDisabled; // Przełącz kolizję
+        }
+    }
+
+    void OnCollisionEnter(Collision other) 
+    {
+        if(isTransitioning || collisionDisabled) { return; }
         
         switch (other.gameObject.tag)  
         {

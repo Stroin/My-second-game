@@ -36,29 +36,41 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.up * Time.deltaTime * mainThrust);
-            if(!audioSource.isPlaying)
-            {
-            audioSource.PlayOneShot(mainEngine);
-            }
-            if(!particleEngine.isPlaying)
-            {
-                particleEngine.Play();
-            }
+            StartThrust();
         }
         else
         {
-            audioSource.Stop();
-            particleEngine.Stop();
+            StopThrust();
         }
-    }
-
+    } 
     void ProcessRotation()
     {
-        if(Input.GetKey(KeyCode.A))
+        Rotation();
+    }
+    void StartThrust()
+    {
+        rb.AddRelativeForce(Vector3.up * Time.deltaTime * mainThrust);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngine);
+        }
+        if (!particleEngine.isPlaying)
+        {
+            particleEngine.Play();
+        }
+    }
+    void StopThrust()
+    {
+        audioSource.Stop();
+        particleEngine.Stop();
+    }
+
+void Rotation()
+    {
+        if (Input.GetKey(KeyCode.A))
         {
             ApllyRotation(mainRotation);
-            if(!particleEngineLeft.isPlaying)
+            if (!particleEngineLeft.isPlaying)
             {
                 particleEngineLeft.Play();
             }
@@ -67,10 +79,10 @@ public class Movement : MonoBehaviour
                 particleEngineLeft.Stop();
             }
         }
-        else if(Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
-           ApllyRotation(-mainRotation);
-           if(!particleEngineRight.isPlaying)
+            ApllyRotation(-mainRotation);
+            if (!particleEngineRight.isPlaying)
             {
                 particleEngineRight.Play();
             }
@@ -80,7 +92,6 @@ public class Movement : MonoBehaviour
             }
         }
     }
-
     private void ApllyRotation(float rotationThisFrame)
     {
         rb.freezeRotation = true; // zamrażanie rotacji, dzięki czemu możemy ręcznie obracać
