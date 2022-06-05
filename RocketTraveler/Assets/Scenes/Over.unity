@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!198 &181215641 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7373366337412505092, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+  m_PrefabInstance: {fileID: 373340031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &373340031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,9 +135,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1171602684, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+      propertyPath: particleEngine
+      value: 
+      objectReference: {fileID: 514991442}
+    - target: {fileID: 1171602684, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+      propertyPath: particleEngineLeft
+      value: 
+      objectReference: {fileID: 822156680}
+    - target: {fileID: 1171602684, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+      propertyPath: particleEngineRight
+      value: 
+      objectReference: {fileID: 181215641}
     - target: {fileID: 5710267138085013734, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714821019148837926, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9086027579275800703, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
       propertyPath: m_RootOrder
@@ -180,6 +201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+--- !u!198 &514991442 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1537986274095036113, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+  m_PrefabInstance: {fileID: 373340031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +300,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!198 &822156680 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 941775592420041342, guid: 4e40fdd00aa01c04ebbecae03daabff3, type: 3}
+  m_PrefabInstance: {fileID: 373340031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1856382720
 GameObject:
   m_ObjectHideFlags: 0

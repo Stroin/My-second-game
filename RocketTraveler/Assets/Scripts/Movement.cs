@@ -9,6 +9,10 @@ public class Movement : MonoBehaviour
     [SerializeField] float mainThrust = 100f;
     [SerializeField] float mainRotation = 100f;
     [SerializeField] AudioClip mainEngine;
+    [SerializeField] ParticleSystem particleEngine;
+    [SerializeField] ParticleSystem particleEngineLeft;
+    [SerializeField] ParticleSystem particleEngineRight;
+
 
 
     // Start is called before the first frame update
@@ -16,6 +20,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -36,10 +41,15 @@ public class Movement : MonoBehaviour
             {
             audioSource.PlayOneShot(mainEngine);
             }
+            if(!particleEngine.isPlaying)
+            {
+                particleEngine.Play();
+            }
         }
         else
         {
             audioSource.Stop();
+            particleEngine.Stop();
         }
     }
 
@@ -48,10 +58,26 @@ public class Movement : MonoBehaviour
         if(Input.GetKey(KeyCode.A))
         {
             ApllyRotation(mainRotation);
+            if(!particleEngineLeft.isPlaying)
+            {
+                particleEngineLeft.Play();
+            }
+            else
+            {
+                particleEngineLeft.Stop();
+            }
         }
         else if(Input.GetKey(KeyCode.D))
         {
            ApllyRotation(-mainRotation);
+           if(!particleEngineRight.isPlaying)
+            {
+                particleEngineRight.Play();
+            }
+            else
+            {
+                particleEngineRight.Stop();
+            }
         }
     }
 

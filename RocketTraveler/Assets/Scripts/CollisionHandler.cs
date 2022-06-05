@@ -34,21 +34,21 @@ public class CollisionHandler : MonoBehaviour
     }
     void StartSuccesSequence()
     {
-        //todo add sfx upon success
         isTransitioning = true;
         audioSource.Stop();
         audioSource.PlayOneShot(success);
         //todo add particle effect upon success
+        particleSuccess.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
     }
     void StartCrashSequence()
     {
-        //todo add sfx upon crash
         audioSource.Stop();
         isTransitioning = true;
         audioSource.PlayOneShot(crash);
         //todo add particle effect upon crash
+        particleCrash.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
     }
