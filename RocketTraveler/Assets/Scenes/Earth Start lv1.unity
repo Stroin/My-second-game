@@ -34867,6 +34867,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7567956727757470069, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: soundTrack.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567956727757470069, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: soundTrack.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 89a5af41f6b067741a790c40b82e2a8f, type: 3}
     - target: {fileID: 7567956728225326265, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -34915,6 +34923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7567956728225326267, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: field of view
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 7567956729329078204, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -34927,6 +34939,14 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 5851111166160969844}
+    - target: {fileID: 7567956729329078205, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567956729329078205, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.7782427
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
 --- !u!1001 &1080901808

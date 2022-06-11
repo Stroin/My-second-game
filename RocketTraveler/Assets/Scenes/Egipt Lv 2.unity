@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.57418823, g: 0.47892702, b: 0.4438878, a: 1}
+  m_IndirectSpecularColor: {r: 0.59805924, g: 0.500008, b: 0.47372407, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9147,7 +9147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672157314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -13, z: 0}
+  m_LocalPosition: {x: 0, y: -12.4, z: 0}
   m_LocalScale: {x: 250, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9528,14 +9528,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: -0.6355181, y: 0.7146159, z: 0.06196864, w: -0.28565863}
+  m_LocalRotation: {x: -0.6750067, y: 0.61439806, z: -0.31129903, w: -0.26452592}
   m_LocalPosition: {x: -26.5, y: 48.3, z: 31.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 15.933, y: 210.431, z: -78.935}
+  m_LocalEulerAnglesHint: {x: 47.7, y: 171.867, z: -98.983}
 --- !u!4 &706191092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5404846953858159151, guid: 68bc5e89530e1b6459029bbdb757d318, type: 3}
@@ -26376,12 +26376,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7567956728225326267, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: m_Depth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567956728225326267, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: field of view
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567956728225326267, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
       propertyPath: m_OcclusionCulling
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7567956728225326267, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
       propertyPath: m_AllowDynamicResolution
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567956728225326267, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567956728225326267, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7567956728225326269, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
       propertyPath: m_ShowDebugText
@@ -26407,6 +26423,14 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1681018513}
+    - target: {fileID: 7567956729329078205, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567956729329078205, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.7782427
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7567956728841401392, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b0f8a979fb6d2dc43a2202264066d494, type: 3}
