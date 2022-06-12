@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 76661
+  controlID: 1239
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 76662
+  controlID: 1240
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 76663
+  controlID: 1241
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: cceff2ff24f0f2ffecfef2ff5a2df3ff28aaf3ff34b5f3ff90b5f3ff60c4f3ffcef2f3ff9c6ff4ffaaf6f4ffba4ef8ff585ef8ffd062f8ffde7af8ffd8a4f8ff9622f9ffa23dfbff5870fbffeac9fcff34f1fcff5c8ffeff9afcfeff44f2ffff1afbffff029f010018030300a8050400d00b0400
+      m_ExpandedIDs: a071fefff871feffc080feff2aaffefffe2bffff3648ffff8677ffff1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 76664
+  controlID: 1242
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 76627
+  controlID: 1158
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -724,22 +724,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Planets/shader
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Planets/shader
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Projekty\My-second-game\RocketTraveler
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 266}
-    m_SelectedIDs: 2e600000
-    m_LastClickedID: 24622
-    m_ExpandedIDs: 00000000f05f0000f25f0000f45f0000f65f0000f85f0000fa5f0000fc5f0000fe5f0000006000001c6000001e600000589f0100989d030000ca9a3b
+    scrollPos: {x: 0, y: 330}
+    m_SelectedIDs: 8e5e0100
+    m_LastClickedID: 89742
+    m_ExpandedIDs: 00000000d06c0000d26c0000d46c0000d66c0000d86c0000da6c0000dc6c0000de6c0000e06c0000e26c0000e46c0000e66c0000e86c0000306d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -767,7 +767,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f05f0000f25f0000f45f0000f65f0000f85f0000fa5f0000fc5f0000fe5f0000006000001c6000001e600000589f0100989d030000ca9a3b
+    m_ExpandedIDs: 00000000d06c0000d26c0000d46c0000d66c0000d86c0000da6c0000dc6c0000de6c0000e06c0000e26c0000e46c0000e66c0000e86c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -792,9 +792,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6e600a00
-    m_LastClickedInstanceID: 680046
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e06c00004cf40500
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -938,8 +938,8 @@ MonoBehaviour:
     m_CachedPref: 260
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 680046
-  m_LastVerticalScrollValue: 270
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

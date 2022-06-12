@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainThrust: 1000
-  mainRotation: 0.7
+  mainRotation: 0.8
   mainEngine: {fileID: 8300000, guid: 58ed06d0b6b337c46ba9df7c55902fd4, type: 3}
   particleEngine: {fileID: 1537986274095036113}
   particleEngineLeft: {fileID: 941775592420041342}
